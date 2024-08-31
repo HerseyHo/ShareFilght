@@ -1,0 +1,21 @@
+<!--pages/Map/map.wxml-->
+<view class="map-wrap">
+  <!-- 交通堵塞直播 -->
+  <view class="title_main"><text>交通堵塞直播</text></view>
+  <view class="video-wrap">
+    <video src="{{src}}" id="zhibo" autoplay="false"></video>
+  </view>
+  <!-- 平台功能 -->
+  <view class="title_main"><text>平台功能</text></view>
+  <view class="video-wrap">
+    <video src="https://cn-videos.dji.net/video_trans/09932d4159d6487c8f19246acbcca8d0/720.mp4" id="platform" autoplay="false"></video>
+  </view>
+  <!-- 网点布局 -->
+  <view class="title_main"><text>网点布局</text></view>
+  <view class="video-wrap">
+    <map id="myMap" class="maMap" subkey="{{key}}" longitude="107.883808" latitude="35.679405" scale="1" markers="{{markers}}"/>
+  </view>
+
+  <!-- 底部模块切换 -->
+  <BottomBar tabID="1"></BottomBar>
+</view>

@@ -1,0 +1,3 @@
+<view class="map-full-wrap">
+  <map id="map_full_scene" class="maMap" subkey="{{key}}" longitude="120.178759" latitude="30.21426" scale="8" markers="{{markers}}" circles="{{circles}}" />
+</view>

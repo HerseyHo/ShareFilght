@@ -1,0 +1,35 @@
+<!--pages/News/news.wxml-->
+<view class="news-wrap">
+  <t-tabs defaultValue="{{0}}" space-evenly="{{false}}" bind:click="onTabsClick">
+    <t-tab-panel wx:for="{{tabList}}" wx:key="key" label="{{item.value}}" value="{{item.code}}" />
+  </t-tabs>
+  <!-- 视频 -->
+  <view class="video-wrap">
+    <video src="https://cn-videos.dji.net/video_trans/09932d4159d6487c8f19246acbcca8d0/720.mp4" id="myVideo" autoplay="false"></video>
+  </view>
+  <!-- 资讯列表 -->
+  <view class="newsList-bodyOut">
+    <view class="news-list-inBody">
+      <view class="news-item" wx:for="{{newsArr.newsList}}" wx:key="key" bind:tap="showDialog" data-key="showMultiTextAndTitle" data-item="{{item}}">
+        <view class="news-item-left">
+          <view class="news-title">{{item.text}}</view>
+          <view class="news-date">{{item.date}}</view>
+        </view>
+        <view class="news-item-right">
+          <image src="{{item.src}}"></image>
+        </view>
+      </view>
+    </view>
+    <view class="noMore">———— 没有更多了 ————</view>
+  </view>
+  <!-- 底部模块切换 -->
+  <BottomBar tabID="2"></BottomBar>
+  <t-dialog visible="{{showMultiTextAndTitle}}" title="{{currentContent.date}}" confirm-btn="{{ confirmBtn }}" bind:confirm="closeDialog">
+    <!-- 适配skyline，增加type="list" -->
+    <scroll-view slot="content" type="list" scroll-y class="long-content">
+      <view class="content-container">{{currentContent.text}}
+      <image src="{{currentContent.src}}"></image>
+      </view>
+    </scroll-view>
+  </t-dialog>
+</view>

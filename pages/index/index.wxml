@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<view class="box-outwrap">
+  <!-- 网点布局 -->
+  <view class="title_main" style="margin-top: -20px;"><text>网点布局</text></view>
+  <view class="video-wrap">
+    <map id="serviceMap" class="maMap" subkey="{{key}}" longitude="120.178759" latitude="30.21426" scale="8" markers="{{markers}}" circles="{{circles}}" />
+    <image class="fullScene" src="../assets/Icons/fullScene.png" bindtap="fullMap"></image>
+  </view>
+
+  <!-- 标题 -->
+  <view class="title_main"><text>应用场景</text>
+    <image src="../assets/Icons/fire.png"></image>
+  </view>
+
+  <!-- 分类 -->
+  <view class="box-main">
+    <view class="check-box" bindtap="go2detail" data-id="{{item.id}}" wx:for="{{sceneTypeList}}" wx:key="key">
+      <image src="{{item.src}}"></image><text>{{item.name}} ></text>
+    </view>
+  </view>
+  <!-- 标题 -->
+  <view class="title_main">
+    <text>所有设备</text>
+    <view class="typeSelect">
+      <t-dropdown-menu>
+        <t-dropdown-item options="{{product.options}}" value="{{product.value}}" bindchange="onChange" />
+      </t-dropdown-menu>
+    </view>
+  </view>
+  <!-- 列表内容 -->
+  <view class="list-body">
+    <scroll-view scroll-y="true" style="height: 100%;" bindscroll="scroll" scroll-top="0px">
+      <view class="scroll-view-item" data-id="{{item.id}}" bind:tap="productPage" wx:for="{{deviceList}}" wx:key="key">
+        <view class="item-left">
+          <image src="{{item.src}}"></image>
+        </view>
+        <view class="item-right">
+          <view class="card-title1"><text class="card-title1-name">{{item.name}}</text><text class="card-button">获取折扣</text></view>
+          <view class="info1">类型：{{item.type}}</view>
+          <view class="info2">{{item.dayPrice}}元/次 {{item.monthPrice}}元/10次</view>
+        </view>
+      </view>
+      <view class="noMore">———— 到底了 ————</view>
+    </scroll-view>
+  </view>
+  <!-- 底部模块切换 -->
+  <BottomBar tabID="3"></BottomBar>
+</view>

@@ -1,0 +1,92 @@
+/* pages/News/news.wxss */
+.news-wrap {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.video-wrap{
+  width: 100%;
+  height: 20vh;
+  background-color: rgb(227, 232, 233);
+}
+#myVideo{
+  width: 90%;
+  margin-left: 5%;
+  height: 100%;
+}
+.newsList-bodyOut {
+  width: 100%;
+  height: 64vh;
+  display: block;
+  background-color: rgb(227, 232, 233);
+  overflow-y: scroll;
+}
+.noMore{
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  overflow: hidden;
+  text-align: center;
+  color: rgb(82, 82, 82);
+}
+.news-list-inBody{
+  width: 90%;
+  margin-left: 5%;
+  background-color: #fff;
+  margin-top: 20px;
+}
+.news-item{
+  width: 90%;
+  margin-left: 5%;
+  height: 120px;
+  border-bottom: 1px solid rgb(206, 206, 206);
+}
+.news-item-left{
+  width: 65%;
+  height: 100%;
+  float: left;
+}
+.news-title{
+  width: 100%;
+  height: 50px;
+  margin-top: 25px;
+  line-height: 16px;
+  font-size: 16px;
+  clear: both;
+}
+
+.news-date{
+  width: 100%;
+  height: 30px;
+  margin-top: 15px;
+  line-height: 20px;
+  color: rgb(80, 79, 79);
+  font-size: 14px;
+  clear: both;
+}
+
+.news-item-right{
+  width: 35%;
+  height: 100%;
+  float: left;
+}
+.news-item-right image{
+  width: 100%;
+  height: 80%;
+  margin-top: 10%;
+}
+
+.wrapper {
+  margin-bottom: 32rpx;
+}
+
+.long-content {
+  height: 576rpx;
+  margin-top: 16rpx;
+  font-size: 32rpx;
+  color: #888;
+}
+
+.long-content .content-container {
+  white-space: pre-line;
+}

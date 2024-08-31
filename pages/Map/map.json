@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "BottomBar": "/pages/components/BottomBar/bar"
+  }
+}

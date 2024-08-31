@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/Map/map"
+  ],
+  "subPackages": [{
+      "root": "pages/News",
+      "name": "News",
+      "pages": [
+        "news"
+      ],
+      "independent": false
+    },
+    {
+      "root": "pages/PersonalCenter",
+      "name": "PersonalCenter",
+      "pages": [
+        "center"
+      ],
+      "independent": false
+    },
+    {
+      "root": "pages/index",
+      "name": "index",
+      "pages": [
+        "index",
+        "MapFull/full_map",
+        "Details/details",
+        "Product/product"
+      ],
+      "independent": false
+    }
+  ],
+  
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "首页",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {
+    "t-icon": "tdesign-miniprogram/icon/icon"
+  },
+  "paths": {
+    "tdesign-miniprogram/*": [
+      "./miniprogram/miniprogram_npm/tdesign-miniprogram/*"
+    ]
+  }
+}

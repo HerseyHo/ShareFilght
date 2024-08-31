@@ -1,0 +1,190 @@
+/**index.wxss**/
+.box-outwrap {
+  width: 100%;
+  height: 94vh;
+  background-color: #f5f4f4;
+  padding: 20px 15px 20px 15px;
+  display: block;
+  overflow: hidden;
+}
+
+.title_main {
+  font-size: 18px;
+  font-weight: bold;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  clear: both;
+  overflow: hidden;
+}
+
+.title_main text {
+  float: left;
+  word-spacing: 20px;
+}
+
+.title_main image {
+  width: 25px;
+  height: 25px;
+  float: left;
+  display: inline;
+  margin-top: 8px;
+  margin-left: 5px;
+}
+
+.box-main {
+  width: 100%;
+  height: 25vh;
+  display: block;
+  clear: both;
+}
+
+.check-box {
+  width: 30%;
+  height: 32%;
+  float: left;
+  margin: 1% 2% 1% 0%;
+  border-radius: 10px;
+  display: block;
+  background-color: #fff;
+}
+
+.check-box image {
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.check-box text {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 22px;
+  display: block;
+  text-align: left;
+  padding-left: 10px;
+  color: #fff;
+  margin-top: -25%;
+  z-index: 1;
+}
+
+.list-body {
+  width: 93%;
+  height: calc(100vh - 71vh);
+  clear: both;
+}
+
+.scroll-view-item {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  display: block;
+  height: 15vh;
+  margin-top: 10px;
+}
+
+.item-left {
+  width: 33%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+}
+
+.item-left image {
+  width: 80%;
+  margin-left: 10%;
+  height: 80%;
+  margin-top: 10%;
+}
+
+.item-right {
+  width: 65%;
+  height: 100%;
+  float: right;
+}
+
+.card-title1 {
+  width: 100%;
+  height: 50px;
+  line-height: 40px;
+  font-weight: bold;
+  clear: both;
+}
+
+.card-title1-name {
+  width: 58%;
+  float: left;
+  height: 50px;
+  line-height: 20px;
+  margin-top: 5px;
+}
+
+.card-button {
+  color: #000000;
+  height: 25px;
+  position: relative;
+  top: 5px;
+  right: 5px;
+  float: right;
+  line-height: 25px;
+  padding: 3px 15px;
+  border-radius: 20px;
+  display: inline-block;
+  background-color: rgb(255, 234, 96);
+}
+
+.info1 {
+  width: 100%;
+  height: 30px;
+  line-height: 25px;
+  clear: both;
+  font-size: 14px;
+  color: rgb(58, 58, 58);
+}
+
+.info2 {
+  width: 100%;
+  height: 30px;
+  line-height: 20px;
+  clear: both;
+  font-size: 14px;
+  color: rgb(58, 58, 58);
+}
+
+.noMore {
+  width: 100%;
+  height: 100px;
+  line-height: 60px;
+  overflow: hidden;
+  text-align: center;
+  color: rgb(82, 82, 82);
+}
+
+.typeSelect {
+  float: right;
+  margin-right: 20px;
+}
+
+.t-dropdown-menu {
+  background: none !important;
+}
+
+.video-wrap {
+  width: 92.5%;
+  height: 20vh;
+  margin-bottom: -10px;
+}
+
+#serviceMap {
+  width: 100%;
+  height: 90%;
+}
+
+.fullScene {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: -30px;
+  left: 90%;
+  display: block;
+  z-index: 35;
+}

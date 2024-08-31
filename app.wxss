@@ -1,0 +1,26 @@
+/**app.wxss**/
+
+page {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+.t-swiper-host {
+  border-radius: 0px !important;
+  height: 50vh !important;
+}
+
+.class .t-class .t-imaget-shape-square .t-shape-square {
+  height: 100% !important;
+}

@@ -1,0 +1,23 @@
+<view class="details-wrap">
+  <!-- 分类 -->
+  <view class="box-main">
+    <view class="check-box" bindtap="sortDevice" data-code="{{item.code}}" data-id="{{item.id}}" wx:for="{{currentType.child}}" wx:key="key">
+      <image src="{{item.src}}"></image><text>{{item.value}}</text>
+    </view>
+  </view>
+  <!-- 设备列表 -->
+  <view class="device-list-wrap">
+    <view class="device-item" wx:for="{{deviceList}}" wx:key="id" data-id="{{item.id}}" bind:tap="productPage">
+      <image class="device-img" src="{{item.src}}"></image>
+      <view class="device-info">
+
+        <view class="device-info-item1"><text class="device-info-name">{{item.name}}</text>
+        </view>
+        <view class="device-info-item2">
+          <text class="device-info-txt1">￥3500 /10次</text>
+          <text class="device-info-txt2">￥300 /次</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

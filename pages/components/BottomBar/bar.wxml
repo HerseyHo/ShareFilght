@@ -1,0 +1,32 @@
+<view class="Bottom-Bar">
+  <t-row>
+    <t-col span="6" class="normal" bind:tap="checkBar" data-id="1" data-url="/pages/Map/map">
+      <view class="bar-icon">
+        <image src="../../assets/Icons/icon1_1.png" style="{{tabID == '1'? '':'display: none;'}}"></image>
+        <image src="../../assets/Icons/icon1_2.png" style="{{tabID != '1'? '':'display: none;'}}"></image>
+      </view>
+      <view class="bar-text" style="{{tabID !== '1'? '':'color: rgb(255,222,19);'}}">首页</view>
+    </t-col>
+    <t-col span="6" class="normal" bind:tap="checkBar" data-id="2" data-url="/pages/News/news">
+      <view class="bar-icon">
+        <image src="../../assets/Icons/icon2_1.png" style="{{tabID == '2'? '':'display: none;'}}"></image>
+        <image src="../../assets/Icons/icon2_2.png" style="{{tabID != '2'? '':'display: none;'}}"></image>
+      </view>
+      <view class="bar-text" style="{{tabID !== '2'? '':'color: rgb(255,222,19);'}}">资讯</view>
+    </t-col>
+    <t-col span="6" class="normal" bind:tap="checkBar" data-id="3" data-url="/pages/index/index">
+      <view class="bar-icon">
+        <image src="../../assets/Icons/icon3_1.png" style="{{tabID == '3'? '':'display: none;'}}"></image>
+        <image src="../../assets/Icons/icon3_2.png" style="{{tabID != '3'? '':'display: none;'}}"></image>
+      </view>
+      <view class="bar-text" style="{{tabID !== '3'? '':'color: rgb(255,222,19);'}}">租赁</view>
+    </t-col>
+    <t-col span="6" class="normal" bind:tap="checkBar" data-id="4" data-url="/pages/PersonalCenter/center">
+      <view class="bar-icon">
+        <image src="../../assets/Icons/icon4_1.png" style="{{tabID === '4'? '':'display: none;'}}"></image>
+        <image src="../../assets/Icons/icon4_2.png" style="{{tabID !== '4'? '':'display: none;'}}"></image>
+      </view>
+      <view class="bar-text" style="{{tabID !== '4'? '':'color: rgb(255,222,19);'}}">我的</view>
+    </t-col>
+  </t-row>
+</view>

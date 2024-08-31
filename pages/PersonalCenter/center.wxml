@@ -1,0 +1,80 @@
+<!--pages/PersonalCenter/center.wxml-->
+<view class="pc-wrap">
+  <view class="center-head">
+    <view class="center-avator">
+      <t-avatar class="avatar-example--large" icon="user" size="large" />
+    </view>
+    <view class="avator-right">
+      <view class="personal-name">微信用户</view>
+      <view class="personal-phone">15011113333</view>
+    </view>
+  </view>
+  <view class="center-order-wrap">
+    <view class="order-title">我的合同<view class="order-title-more">全部 ></view>
+    </view>
+    <view class="order-type">
+      <view class="order-item">
+        <view class="order-item-num">--</view>
+        <view class="order-item-name">待签署</view>
+      </view>
+      <view class="order-item">
+        <view class="order-item-num">--</view>
+        <view class="order-item-name">待执行</view>
+      </view>
+      <view class="order-item">
+        <view class="order-item-num">--</view>
+        <view class="order-item-name">执行中</view>
+      </view>
+      <view class="order-item">
+        <view class="order-item-num">--</view>
+        <view class="order-item-name">已完结</view>
+      </view>
+      <view class="order-item">
+        <view class="order-item-num">--</view>
+        <view class="order-item-name">已作废</view>
+      </view>
+    </view>
+  </view>
+  <view class="center-part-wrap">
+    <view class="order-title">常用功能</view>
+    <view class="part-type">
+      <view class="part-item">
+        <view class="part-item-img">
+          <image src="../assets/Icons/jiesuandan.png"></image>
+        </view>
+        <view class="part-item-name">结算单</view>
+      </view>
+      <view class="part-item">
+        <view class="part-item-img">
+          <image src="../assets/Icons/zhifu.png"></image>
+        </view>
+        <view class="part-item-name">支付记录</view>
+      </view>
+      <view class="part-item">
+        <view class="part-item-img">
+          <image src="../assets/Icons/caozuozheng.png"></image>
+        </view>
+        <view class="part-item-name">操作证</view>
+      </view>
+      <view class="part-item">
+        <view class="part-item-img">
+          <image src="../assets/Icons/baoxiu.png"></image>
+        </view>
+        <view class="part-item-name">报修</view>
+      </view>
+      <view class="part-item">
+        <view class="part-item-img">
+          <image src="../assets/Icons/yinsi.png"></image>
+        </view>
+        <view class="part-item-name">隐私管理</view>
+      </view>
+    </view>
+  </view>
+  <!-- 客服图标 -->
+  <view class="center-service">
+    <image src="../assets/Icons/service_icon.png"></image>
+    <view class="kefu">咨询客服</view>
+  </view>
+  <!-- 底部模块切换 -->
+  <BottomBar tabID="4"></BottomBar>
+</view>

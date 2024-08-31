@@ -1,0 +1,71 @@
+<view class="product-wrap">
+  <!-- 轮播 -->
+  <view class="bigImg">
+    <image src="{{currentItem.src}}"></image>
+  </view>
+  <!-- 标签 -->
+  <view class="product-price">
+    <view class="price-tiny">
+      <view class="price-tiny-left">￥360</view>
+      <view class="price-tiny-right">￥4200</view>
+    </view>
+    <view class="price-now">
+      <view class="price-tiny-left1">￥300 /次</view>
+      <view class="price-tiny-center1">￥3000 /10次</view>
+      <view class="price-tiny-right1">
+        <view class="price-dsc">含税价</view>
+      </view>
+    </view>
+  </view>
+  <!-- 信息card -->
+  <view class="product-card">
+    <text class="title-big">{{currentItem.name}}</text>
+    <view class="title-bap">
+      <t-row>
+        <t-col span="6" t-class="dark">
+          <image class="iconClass" src="../assets/Icons/icon1.png"></image>
+          专业培训
+        </t-col>
+        <t-col span="6" t-class="light">
+          <image class="iconClass" src="../assets/Icons/icon2.png"></image>定期保养
+        </t-col>
+        <t-col span="6" t-class="dark">
+          <image class="iconClass" src="../assets/Icons/icon3.png"></image>上市公司
+        </t-col>
+        <t-col span="6" t-class="dark">
+          <image class="iconClass" src="../assets/Icons/icon4.png"></image>定制服务
+        </t-col>
+      </t-row>
+    </view>
+  </view>
+  <!-- 设备参数 -->
+  <view class="product-info">
+    <text class="product-info-title">设备方案</text>
+    <view class="product-table" style="{{currentItem.group.length === 0? 'display:none;': ''}}">
+      <!-- <view class="product-table-row">
+        <view class="product-table-row-left">无人机</view>
+        <view class="product-table-row-right">可搭配负载</view>
+      </view> -->
+      <view class="product-table-row2" wx:for="{{currentItem.group}}" wx:key="index">
+        {{currentItem.name}} + {{item}}
+      </view>
+    </view>
+  </view>
+  <view class="product-info">
+    <text class="product-info-title">设备参数</text>
+    <view class="product-table" style="{{currentItem.params.length === 0? 'display:none;': ''}}">
+
+      <view class="product-table-row" wx:for="{{currentItem.params}}" wx:key="index">
+        {{item.name}}： {{item.value}}
+      </view>
+    </view>
+  </view>
+  <view class="white-space"></view>
+  <!-- 底部 -->
+  <view class="footer-wrap">
+    <view class="footer-button" bind:tap="onSeasonPicker">时间段选择</view>
+  </view>
+  <t-picker visible="{{dateVisible}}" value="{{dateValue}}" data-key="date" title="选择时间段" cancelBtn="取消" confirmBtn="确认" usingCustomNavbar bindchange="onPickerChange" bindpick="onColumnChange" bindcancel="onPickerCancel">
+    <t-picker-item options="{{timeRange}}"></t-picker-item>
+  </t-picker>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "BottomBar": "/pages/components/BottomBar/bar",
+    "t-avatar": "tdesign-miniprogram/avatar/avatar"
+  }
+}

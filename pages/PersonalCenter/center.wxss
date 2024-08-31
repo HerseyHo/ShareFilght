@@ -1,0 +1,149 @@
+/* pages/PersonalCenter/center.wxss */
+.pc-wrap {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(0deg, rgb(235, 235, 235), rgb(235, 235, 235) 70%, rgba(255, 222, 19, .8));
+}
+
+.center-head {
+  width: 100%;
+  height: 120px;
+}
+
+.center-avator {
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.avator-right {
+  float: left;
+  width: calc(100% - 140px);
+  height: 100%;
+  margin-left: 20px;
+}
+
+.personal-name {
+  height: 40px;
+  line-height: 50px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.personal-phone {
+  height: 40px;
+  line-height: 30px;
+  color: rgb(94, 93, 93);
+}
+
+.center-order-wrap {
+  width: 90%;
+  height: 150px;
+  border-radius: 15px;
+  background-color: #fff;
+  display: block;
+  margin: 0 5%;
+}
+
+.center-part-wrap {
+  width: 90%;
+  height: 200px;
+  border-radius: 15px;
+  background-color: #fff;
+  display: block;
+  margin: 15px 5%;
+}
+
+.center-service {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.301);
+  position: absolute;
+  bottom: 150px;
+  right: 20px;
+  z-index: 50px;
+  box-shadow: 0px 5px 5px rgba(0,0,0,0.2) /*blur值为5px*/ 
+}
+
+.center-service image {
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin: 10px 20px 0px 20px;
+}
+
+.kefu {
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+}
+.order-title{
+  width: 90%;
+  margin: 0px 5%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.order-title-more{
+  float: right;
+  font-size: 15px;
+  font-weight: normal;
+  color: rgb(73, 73, 73);
+}
+.order-type{
+  width: 90%;
+  margin: 0px 5%;
+  height: 80px;
+}
+.order-item{
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+.order-item-num{
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 70px;
+}
+.order-item-name{
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  line-height: 0px;
+}
+.part-type{
+  width: 90%;
+  margin: 0px 5%;
+}
+.part-item{
+  width: 25%;
+  height: 100%;
+  float: left;
+  margin-bottom: 15px;
+  margin-top: -5px;
+}
+.part-item-img{
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 60px;
+}
+.part-item-img image{
+  width: 25px;
+  height: 25px;
+}
+.part-item-name{
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  line-height: 0px;
+}
